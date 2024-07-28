@@ -1,0 +1,16 @@
+[package]
+name = "sony-web"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+sony-protocol = { git = "https://github.com/oupson/sony-rs.git", rev = "0bf5b8989e8a36d18a7990a63fb0f875c864a3d9" }
+js-sys = "0.3"
+console_error_panic_hook = "0.1"
+tracing-wasm = "0.2"
+web-time = "1.1"
+tracing = "0.1"
